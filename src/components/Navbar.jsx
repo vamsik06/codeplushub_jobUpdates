@@ -16,24 +16,27 @@ const closeMenu = () => setIsOpen(false);
         <h1>Codeplushub_JobUpdates</h1>
       </div>
 
-
-    
-     
-      <nav className="navbar">
-        <NavLink 
-        to="/"
-        style={({ isActive }) =>(isActive ? {color:"blue"} : null)}
-        >Home</NavLink>
-
-        <NavLink 
-        to="/contact"
-         style={({ isActive }) =>(isActive ? {color:"blue"} : null)}
-        >Contact</NavLink>
-        <NavLink 
-        to="/about"
-         style={({ isActive }) =>(isActive ? {color:"blue"} : null)}
-        >About</NavLink>
+       <nav className="navbar">
+        <NavLink to="/" style={({ isActive }) => (isActive ? { color: "blue" } : undefined)}>Home</NavLink>
+        <NavLink to="/contact" style={({ isActive }) => (isActive ? { color: "blue" } : undefined)}>Contact</NavLink>
+        <NavLink to="/about" style={({ isActive }) => (isActive ? { color: "blue" } : undefined)}>About</NavLink>
       </nav>
+
+{/* Hamburger button */}
+<button
+  className="hamburger"
+  aria-label="Open menu"
+  onClick={() => setIsOpen(!isOpen)}
+>
+  ☰
+</button>
+    
+     <aside className={isOpen ? "sidebar open" : "sidebar"}>
+    <button className="close-btn" onClick={() => setIsOpen(false)}>✖</button>
+    <NavLink to="/" onClick={closeMenu}>Home</NavLink>
+    <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
+    <NavLink to="/about" onClick={closeMenu}>About</NavLink>
+  </aside>
     </header>
   );
 };

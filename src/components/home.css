@@ -16,8 +16,23 @@
     font-size: 23px;
 }
 
-/* @media screen and (max-width: 480px) {
+.article-data {
+    font-size: 12px;
+    text-align: center;
+    margin: 15px;
+}
+
+@media screen and (max-width: 480px) {
     .hero-section {
-        font-size: 10px;
+        font-size: 15px;
+        padding: 13px;
+        min-height: 200px;
+        
+
     }
-} */
+    .hero-section h1,p {
+        margin-top: 10px;
+    } 
+    
+}
+

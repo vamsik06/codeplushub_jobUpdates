@@ -45,95 +45,58 @@
   text-decoration: underline;
 }
 
-
-/* navbar.css */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1.5rem;
-  background: #fff;
-  border-bottom: 1px solid #eee;
-  position: relative;
-  z-index: 20;
-}
-
-.logo { display: flex; align-items: center; gap: 10px; }
-.logo h1 { font-size: 18px; color: #222; }
-
-/* Desktop links */
-.navbar {
-  display: flex;
-  gap: 20px;
-}
-.navbar a { text-decoration: none; color: #333; font-weight: 500; transition: color .2s; }
-.navbar a:hover { color: #007bff; }
-
 /* Hamburger button (hidden on desktop) */
 .hamburger {
   display: none;
+  font-size: 28px;
+  cursor: pointer;
   background: none;
   border: none;
-  font-size: 26px;
-  cursor: pointer;
+  text-decoration: none;
 }
-
-/* Overlay (dark background when sidebar open) */
-.overlay {
-  display: none;
-  position: fixed;
-  inset: 0; /* top:0; right:0; bottom:0; left:0; */
-  background: rgba(0,0,0,0.35);
-  z-index: 90;
-}
-.overlay.show { display: block; }
 
 /* Sidebar */
 .sidebar {
   position: fixed;
   top: 0;
-  right: -280px; /* keep hidden off-screen */
-  width: 280px;
+  right: -250px; /* hidden by default */
+  width: 250px;
   height: 100vh;
-  background: #fff;
-  box-shadow: -6px 0 18px rgba(0,0,0,0.08);
-  padding: 1.2rem;
-  transition: right 0.28s ease-in-out;
-  z-index: 100;
+  background: white;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 100;
 }
-.sidebar.open { right: 0; }
 
-/* Close button inside sidebar */
+.sidebar.open {
+  right: 0; /* slide in */
+}
+
+/* Close button */
 .close-btn {
   align-self: flex-end;
   background: none;
   border: none;
-  font-size: 22px;
+  font-size: 24px;
   cursor: pointer;
 }
 
-/* Sidebar link styles */
-.sidebar a {
-  text-decoration: none;
-  color: #222;
-  font-size: 18px;
-  padding: 10px 0;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-/* ---------- Responsive: mobile ---------- */
+/* Show hamburger only on mobile */
 @media (max-width: 768px) {
-  /* hide desktop links on mobile */
-  .navbar { display: none; }
-
-  /* show hamburger */
-  .hamburger { display: inline-flex; }
-
-  /* improve logo size on small screens */
-  .logo h1 { font-size: 16px; }
+  .navbar {
+    display: none;
+    text-decoration: none;
+  }
+  .hamburger {
+    display: block;
+   
+    
+  }
+  a{
+    text-decoration: none;
+    color: blue;
+  }
 }
