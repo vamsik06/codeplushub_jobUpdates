@@ -1,8 +1,10 @@
-import "./home.css";
+import Jobcards from "./JobCards";
+import "../styles/Home.css"
+import jobs from "../dataObject/data"
 
 const Home = () => {
   return (
-    <>
+    <div>
     <main className="main-container">
       <div className="hero-section">
       <h1>Find the Latest Off-Campus Jobs for Freshers</h1><br/>
@@ -18,8 +20,16 @@ const Home = () => {
       <div className="job-cards">
               
       </div>
+       {/*Job-Cards Section*/}
+       <section className="card-container">
+        {jobs.map((job,index) =>(
+          <Jobcards key={index} {...job} />
+        ))}
+       </section>
+    
     </section>
-    </>
+
+    </div>
   );
 };
 
