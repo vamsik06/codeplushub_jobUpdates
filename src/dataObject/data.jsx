@@ -46,6 +46,22 @@ const jobs = [
     experience: "0-2 Years",
     typeOfJob: "Internship",
     companyImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE1WCpUKKQm47ToLm119vXOB34Hqxprs2ZIQ&s" // Innovate Ltd logo placeholder
+  },
+  {
+    role: "UI/UX Designer",
+    companyName: "DesignHub",
+    location: "Hyderabad",
+    experience: "1-2 Years",
+    typeOfJob: "Part-time",
+    companyImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA3HpZt8VWj2DKh0wRI__mm0UuvxcO32GQhQ&s" // DesignHub logo placeholder
+  },
+  {
+    role: "Backend Developer",
+    companyName: "Innovate Ltd",
+    location: "Bangalore",
+    experience: "0-2 Years",
+    typeOfJob: "Internship",
+    companyImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE1WCpUKKQm47ToLm119vXOB34Hqxprs2ZIQ&s" // Innovate Ltd logo placeholder
   }
 ];
 

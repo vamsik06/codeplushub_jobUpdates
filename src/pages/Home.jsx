@@ -1,6 +1,7 @@
 import Jobcards from "./JobCards";
-import "./Home.css"
+import "./home.css"
 import jobs from "../dataObject/data"
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -26,10 +27,8 @@ const Home = () => {
           <Jobcards key={index} {...job} />
         ))}
        </section>
-    
     </section>
-
-    </div>
+  </div>
   );
 };
 
