@@ -1,5 +1,5 @@
 import Jobcards from "./JobCards";
-import "../styles/Home.css"
+import "./Home.css"
 import jobs from "../dataObject/data"
 
 const Home = () => {
