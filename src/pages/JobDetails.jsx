@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import jobs from "../dataObject/data";
-import './jobDetails.css';
+import './JobDetails.css';
 import Jobcards from './JobCards';  // ✅ Reuse your Jobcards component
 import { SlLocationPin } from "react-icons/sl";  // ✅ You need this if you use location icon
 
